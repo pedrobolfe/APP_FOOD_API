@@ -1,0 +1,8 @@
+{
+  "name": "APP_FOOD_API",
+  "version": "1.0.0",
+  "description": "aplicativo de comida",
+  "main": "index.js",
+  "author": "Pedro Sch",
+  "license": "MIT"
+}
