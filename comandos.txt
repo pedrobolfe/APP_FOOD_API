@@ -1,0 +1,7 @@
+npm i -g yarn
+
+yarn --version
+
+yarn init
+
+yarn add -D typescript
