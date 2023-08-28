@@ -4,5 +4,8 @@
   "description": "aplicativo de comida",
   "main": "index.js",
   "author": "Pedro Sch",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
