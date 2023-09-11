@@ -1,0 +1,7 @@
+entra na pasta
+npm install
+
+npm run dev
+
+se der erro
+npm i ts-node
