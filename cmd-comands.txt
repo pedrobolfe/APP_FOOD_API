@@ -5,3 +5,9 @@ npm run dev
 
 se der erro
 npm i ts-node
+
+baixar mongodb
+npm install mongoose
+
+inicializar o server, verificar se tem docker baixado
+docker run --name mongo --volume /save/mongo:/data/dp -p 27017:27017 -d mongo
