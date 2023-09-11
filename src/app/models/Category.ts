@@ -9,5 +9,8 @@ export const Category = model("Category", new Schema({
 		type: String,
 		required: true
 	}
+<<<<<<< HEAD
+=======
 
+>>>>>>> refs/remotes/origin/main
 }));
