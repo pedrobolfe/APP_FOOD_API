@@ -1,11 +1,12 @@
 import {model, Schema } from 'mongoose';
-
+// uma classe do pedido de produtos
 export const Order = model('Order', new Schema({
-	table: {
+	table: { 
 		type: String,
 		required: true,
 	},
-	status: {
+	status: { // status que o pedido pode ter, esperando, em produção e concluido
+		// status padrao é esperando
 		type: String,
 		enum: ['WAITING', 'IN_PRODUCTION', 'DONE'],
 		default: 'WAITING',
@@ -14,15 +15,15 @@ export const Order = model('Order', new Schema({
 		type: Date,
 		default: Date.now,
 	},
-	products: {
+	products: {// é um array dos produtos 
 		required: true,
 		type:[{
-			product: {
+			product: { // objeto do produto
 				type: Schema.Types.ObjectId,
 				required: true,
 				ref: 'Product',
 			},
-			quantity: {
+			quantity: { // quantidade de produtos
 				type: Number,
 				default: 1,
 			},
