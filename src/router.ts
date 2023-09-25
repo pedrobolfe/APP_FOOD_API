@@ -13,7 +13,7 @@ import { cancelOrder } from './app/useCases/orders/cancelOrder';
 export const router = Router();
 
 //configuração do multer
-const upload = multer({
+const upload = multer({ // cria um objeto para baixar e salvar arquivos na pasta uploads
 	storage: multer.diskStorage({
 		destination(req, file, callback){
 			callback(null, path.resolve(__dirname, '..', 'uploads'));
